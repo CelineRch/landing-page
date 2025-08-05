@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');   
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 img {
@@ -12,34 +17,70 @@ img {
 }
 
 .header {
-    justify-content: flex-start;
-    background-color: #1F2937;
-    flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    padding: 1.5% 13%;
+}
+
+.header, .footer {
+    background-color: #1F2937;
+    color: #f9faf8;
 }
 
 .header-line {
     display: flex;
     justify-content: space-between;
-    padding: 1%;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
+    gap: 2rem;
+    flex-shrink: 0;
+}
+
+.header-links a, .subtitle {
+    font-size: 18px;
+    color: #d0d1d0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
 }
 
 .header .content {
     display: flex;
-    justify-content: center;
-}
-
-.content .right {
-    max-width: 15%;
-    flex-shrink: 0;
+    gap: 25%;
+    padding: 9% 0;
+    align-items: center;
 }
 
 .content .left {
-    max-width: 15%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 1rem;
+}
+
+.content .right {
+    flex-shrink: 0;
+}
+
+.blue-box {
+    background-color: #3882f6;
+    color: white;
+    padding: 2% 7%;
+    font-weight: bold;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 10px;
 }
 
 .main {
@@ -47,6 +88,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5% 0;
 }
 
 .main img {
@@ -79,7 +121,7 @@ img {
     display: flex;
     justify-content: center;
     background-color: #e5e7eb;
-    padding: 4%;
+    padding: 10% 4%;
 }
 
 .author {
@@ -88,16 +130,25 @@ img {
 
 .sign-up {
     background-color: white;
-    padding: 5% 10%;
+    padding: 8% 10%;
 }
 
 .sign-up-content {
     background-color: #3882f6;
-    padding: 3% 5%;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.call-to-action {
+    max-width: 40%;
+}
 
 .footer {
     justify-content: flex-end;
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
 }
