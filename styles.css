@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    justify-content: flex-start;
+    background-color: #1F2937;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.header .content {
+    display: flex;
+    justify-content: center;
+}
+
+.content .right {
+    max-width: 15%;
+    flex-shrink: 0;
+}
+
+.content .left {
+    max-width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main img {
+    border: 1px solid blue;
+}
+
+.illustrations {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 8%;
+    text-align: center;
+}
+
+.center-quote {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    background-color: #e5e7eb;
+    padding: 4%;
+}
+
+.author {
+    align-self: flex-end;
+}
+
+.sign-up {
+    background-color: white;
+    padding: 5% 10%;
+}
+
+.sign-up-content {
+    background-color: #3882f6;
+    padding: 3% 5%;
+}
+
+
+.footer {
+    justify-content: flex-end;
+    background-color: blue;
+}
