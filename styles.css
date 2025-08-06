@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -39,26 +39,25 @@ img {
     flex-shrink: 0;
 }
 
-.header-links a, .subtitle {
+.header-links a, .subtitle, title {
     font-size: 18px;
     color: #d0d1d0;
 }
 
 .logo {
     font-size: 24px;
-    font-weight: bold;
-    flex-shrink: 0;
+    font-weight: 800;
 }
 
 .title {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .header .content {
     display: flex;
     gap: 25%;
-    padding: 9% 0;
+    padding: 10% 0;
     align-items: center;
 }
 
@@ -67,10 +66,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.content .right {
-    flex-shrink: 0;
 }
 
 .blue-box {
@@ -88,33 +83,39 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5% 0;
+    padding: 4% 0;
+    justify-content: space-around;
+}
+
+.information-header {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
 }
 
 .main img {
-    border: 1px solid blue;
+    border: 5px solid #3882f6;
+    border-radius: 20px;
 }
 
 .illustrations {
     display: flex;
     justify-content: center;
-    gap: 2%;
+    gap: 5%;
+    padding: 3% 0;
 }
 
 .illustration {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 8%;
+    max-width: 12%;
     text-align: center;
+    color: rgb(87, 86, 86);
 }
 
-.center-quote {
-    max-width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.illustration img {
+    margin-bottom: 10%;
 }
 
 .quote {
@@ -124,25 +125,59 @@ img {
     padding: 10% 4%;
 }
 
+.center-quote {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 300;
+}
+
 .author {
     align-self: flex-end;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 3%;
 }
 
 .sign-up {
     background-color: white;
-    padding: 8% 10%;
+    padding: 8% 14%;
 }
 
 .sign-up-content {
     background-color: #3882f6;
-    padding: 2% 5%;
+    padding: 4% 12%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
 }
 
 .call-to-action {
-    max-width: 40%;
+    max-width: 70%;
+    padding: 0;
+}
+
+.call-to-action div {
+    margin-bottom: 5px;
+}
+
+.sign-up .text {
+    font-weight: normal;
+    font-size: 16px;
+    color:#e5e7eb;
+}
+
+.rick-roll-button {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1% 3%;
 }
 
 .footer {
